@@ -21,7 +21,7 @@ const EmployeeController = {
         });
 
         return res.status(200).send({
-            message: "Se ha guradado correctamente"
+            message: "Has been saved successfully"
         });
     },
 
@@ -53,7 +53,8 @@ const EmployeeController = {
             });
 
             return res.status(200).send({
-                project: employeeUpdated
+                project: employeeUpdated,
+                message: "Has been updated successfully"
             });
         });
 
@@ -71,7 +72,7 @@ const EmployeeController = {
             });
 
             return res.status(200).send({
-                project: employeeDeleted
+                message: "Has been deleted successfully"
             });
         });
     }
